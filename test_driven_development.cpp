@@ -59,6 +59,18 @@ void testArrayWithNoElements() {
     assert(result == true);
 }
 
+void testArrayWithAlternateIncreasingDecreasingPattern() { 
+    int arr[] = {1, 3, 2, 4, 3}; 
+    bool result = isSorted(arr, 5);
+    assert(result == false);
+}
+
+void testArraywithNegativesOnly() { 
+    int arr[] = {-5, -4, -3, -2, -1}; 
+    bool result = isSorted(arr, 5);
+    assert(result == true);
+}
+
 int main() {
     testSortedArray();
     testUnSortedArray();
