@@ -42,7 +42,7 @@ void testArraySortedInDescendingOrder() {
 }
 
 void testArrayContainingNegativeValues() { 
-    int arr[] = {-1, -2, 3, 4, 5}; 
+    int arr[] = {-2, -1, 3, 4, 5}; 
     bool result = isSorted(arr, 5);
     assert(result == true);
 }
