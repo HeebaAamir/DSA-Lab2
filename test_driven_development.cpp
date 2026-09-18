@@ -3,7 +3,7 @@
 using namespace std;
 
 bool isSorted(const int *arr, const int size){
-    for(int i=0; i<size;i++){
+    for(int i=0; i<size-1;i++){
         if(arr[i] > arr[i+1]){
             return false;
         }
@@ -59,8 +59,15 @@ void testArrayWithNoElements() {
     assert(result == true);
 }
 
-
-
 int main() {
+    testSortedArray();
+    testUnSortedArray();
+    testArrayWithDuplicates();
+    testArrayWithSingleElement();
+    testArraySortedInDescendingOrder();
+    testArrayContainingNegativeValues();
+    testArrayWithIdenticalElements();
+    testArrayWithNoElements();
+
     return 0;
 }
